@@ -1,5 +1,4 @@
 import { Button } from "@chakra-ui/react";
-import type { FC } from "react";
 
 type Props = {
   children: string;
@@ -7,7 +6,7 @@ type Props = {
   loading?: boolean;
 };
 
-const PrimaryButton: FC<Props> = ({ children, onClick, loading = false }) => {
+const PrimaryButton= ({ children, onClick, loading = false } : Props) => {
   return (
     <Button
       onClick={onClick}

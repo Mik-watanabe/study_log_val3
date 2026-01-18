@@ -35,7 +35,7 @@ const StudyLogTable = memo(({ logs, onDelete, onUpdate }: Props) => {
               <Table.Cell>{item.hours}</Table.Cell>
               <Table.Cell textAlign="end">
                 <PrimaryIconButton
-                  label="edit icon"
+                  label="edit_icon"
                   color="blue"
                   onClick={() => onUpdate(item)}
                 >
@@ -43,7 +43,7 @@ const StudyLogTable = memo(({ logs, onDelete, onUpdate }: Props) => {
                 </PrimaryIconButton>
 
                 <PrimaryIconButton
-                  label="delete icon"
+                  label="delete_icon"
                   color="red"
                   onClick={() => onDelete(item.id)}
                 >
